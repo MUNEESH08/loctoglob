@@ -1,0 +1,171 @@
+.lgtitle {
+  margin-top: 6%;
+}
+
+body {
+  background-color: rgb(15, 17, 26); 
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.sjw {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 15%;
+  margin-top: 2%;
+}
+
+.container {
+  background-color: rgba(0, 22, 45, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(75, 169, 255, 0.8);
+  width: 400px;
+  max-width: 100%;
+}
+
+.container:hover {
+  transition: 1s;
+  border-radius: 0px;
+  box-shadow: 0 0 20px rgba(75, 169, 255, 0.9);
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #99ccff;
+  cursor: pointer;
+  margin: 0 15px;
+  padding-bottom: 5px;
+}
+
+h1.active {
+  color: #4ba9ff;
+  border-bottom: 2px solid #4ba9ff;
+}
+
+.form-content {
+  display: block;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #99ccff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] { 
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(15, 17, 26, 0.8);
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4ba9ff; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #399ad8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .sjw {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lgtitle {
+    margin-top: 15%;
+  }
+
+  .container {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  input[type="submit"] {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .sjw {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  input[type="submit"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
