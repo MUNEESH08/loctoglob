@@ -67,6 +67,8 @@ def reset():
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
+    if 'username' not in session:
+        return redirect(url_for('login'))
     return render_template('index.html')
 
 @app.route('/serveo')
